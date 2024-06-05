@@ -167,7 +167,7 @@ func ChatForOpenAI(c *gin.Context) {
 
 	sendChannelId, calledCozeBotId, isNewChannel, err := getSendChannelIdAndCozeBotId(c, request.ChannelId, request.Model, true)
 	if request.Model == "gpt4o" {
-		calledCozeBotId = "1243061315979972639"
+		calledCozeBotId = "1247915028858798212"
 	}
 	if err != nil {
 		response := model.OpenAIErrorResponse{
