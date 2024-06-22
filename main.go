@@ -44,7 +44,7 @@ func main() {
 	middleware.SetUpLogger(server)
 	router.SetApiRouter(server)
 
-	var port = os.Getenv("PORT")
+	var port = "7860"
 	if port == "" {
 		port = strconv.Itoa(*common.Port)
 	}
